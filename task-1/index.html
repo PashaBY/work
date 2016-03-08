@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Воробьёв Павел</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+    html {
+        /*background-color:  rgba(179, 158, 134, 1);*/
+        background-image: url(background.png);
+        background-repeat: no-repeat;
+    }
+
+    p {
+            font-size: 18px;
+        }
+
+    .title {
+            background-color: rgba(117, 93, 79, 0.5);
+            /*background: linear-gradient(to top, #fefcea, #f1da36)*/
+            height: 90px;
+            padding-left: 10px;
+        }
+
+        .title h2 {
+            color: #d9c9bd;
+            font-family: cursive;
+            font-size: 20px;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+    .content {
+        /*border: 3px solid rgba(117, 93, 79, 1);*/
+        background-color: rgba(224, 224, 224, 0.25);
+        width: 900px;
+        height: 390px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .navigation {
+            margin-top: 30px;
+            float:right;
+            background-color: rgba(161, 136, 120, 0.7);
+            border: 5px solid rgba(186, 152, 130, 0.7);
+        }
+
+        .navigation a {
+            padding: 8px;
+            padding-right: 100px;
+            padding-left: 20px;
+            color: rgba(255, 220, 199, 1);
+            display: block;
+
+            text-decoration: none;
+            font-size: 24px;
+            font-weight:bolder;
+
+        }
+
+        .navigation a:hover {
+            background-color: rgba(117, 93, 79, 1);
+        }
+
+    .cont {
+            background-color: rgba(209, 183, 165, 0.8);
+            margin-top: 15px;
+            margin-right: 10px;
+            float:right;
+            width: 230px;
+            height: 100px;
+
+            border: 1px solid rgba(209, 183, 165, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .cont p {
+            overflow: hidden;
+            line-height: 1.2;
+            padding-left: 15px;
+        }
+
+        .cont a {
+            text-decoration: none;
+            font-size: 15px;
+            color: black;
+        }
+
+        .cont a:hover {
+            text-decoration: underline;
+        }
+
+    .photo {
+            width: 180px;
+            height: 268.9px;
+            padding: 30px;
+            float: left;
+            /*border: 1px solid black;*/
+        }
+
+        .photo img {
+                border: 5px solid rgba(186, 152, 130, 1);
+        }
+
+    .about {
+            float: left;
+            width: 350px;
+            margin-top: 30px;
+            /*border: 1px solid black;*/
+            background-color: rgba(209, 183, 165, 0.8);
+            border: 1px solid rgba(209, 183, 165, 0.8);
+            /*box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);*/
+            border-radius: 10px;
+        }
+
+        .about h2 {
+            color: rgba(74, 64, 53, 1);
+            font-family: cursive;
+            position: relative;
+            margin-left: -30px;
+        }
+
+    .emty {
+        float: left;
+        width: 100%;
+        height: 60px;
+    }
+
+    table {
+        }
+        table img {
+            border: 3px solid rgba(186, 152, 130, 1);
+
+            -webkit-transition:0.5s;
+            -moz-transition:0.5s;
+            transition:0.5s;
+        }
+
+        table img:hover {
+             -webkit-transform: rotate(-2deg) scale(2.5);
+             -moz-transition: rotate(-2deg) scale(2.5);
+        }
+
+    .work {
+            background-color: rgba(237, 237, 237, 0.4);
+            float: left;
+            margin-left: 3%;
+            width: 94%;
+
+            /*border: 1px solid black;*/
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .work p {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+    #back-top{
+            position:fixed;
+            bottom:30px;
+            right: 60px;
+        }
+
+        #back-top a{
+            width:64px;
+            display:block;
+            text-align:center;
+            font:11px/100% Arial, Helvetica, sans-serif;
+            text-transform:uppercase;
+            text-decoration:none;
+            opacity: 0.5;
+            color:#bbb;
+
+            -webkit-transition:1s;
+            -moz-transition:1s;
+            transition:1s;
+        }
+
+        #back-top a:hover{
+            color:#000;
+            opacity: 1;
+        }
+
+        #back-top span{
+            width:64px;
+            height:64px;
+            display:block;
+            margin-bottom:7px;
+            background:#ddd url(up.png) no-repeat center center;
+
+            -webkit-border-radius:15px;
+            -moz-border-radius:15px;
+            border-radius:15px;
+
+            -webkit-transition:1s;
+            -moz-transition:1s;
+            transition:1s;
+        }
+        #back-top a:hover span{background-color:#bab8b8}
+    </style>
+</head>
+<body>
+    <div align="center" >
+        <div align="left" style="width: 900px">
+            <div class="title" align="center"><br>
+                <h2 style="margin-left:-150px">Павел</h2>
+                <h2 style="margin-left:-50px">Воробьёв</h2>
+            </div><br><br><br>
+
+            <div class="content">
+                <div class="navigation">
+                    <a href="#">Домашняя</a>
+                    <a href="#expec">Ожидания</a>
+                    <a href="#my_work">Работа</a>
+                    <a href="#exp">Опыт</a>
+                </div>
+
+                <div class="photo">
+                    <img src="mi.jpg" width="180px" alt="My photo">
+                </div>
+
+                <div class="about">
+                    <h2 align="center">Коротко о себе</h2>
+                    <p style="padding-left:15px; padding-right:15px">
+                        Студент 2-го курса БНТУ(Белорусский Национальный Технический Университет),
+                        энергетического факультета. Специальность автоматизация и управление
+                        теплоэнергетическими процессами. <br><br>19 лет</p>
+                </div>
+
+                <div class="cont">
+                    <p>
+                        Контактные данные:<br>
+                        <a href="l:+375296770950">+375 29 677 09 50 (velcome)</a><br>
+                        <a href="mailto:pasha.vorobyov.by@gmail.com">pasha.vorobyov.by@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="emty" id="my_work"></div>
+                <div class="work">
+                    <div class="title_work">
+                        <h2 style="padding-left:15px">
+                            Здесь представлена моя последняя работа.
+                        </h2>
+                        <hr width="90%" style="padding-left:5%">
+                    </div>
+                <table border="0" cellpadding="10px" cellspacing="0" width="100%">
+                    <tr valign="top">
+                        <td width="12%" style="padding-left: 20px">
+
+                        </td>
+
+                        <td width="26.3%">
+                            <img src="work_1.png" width="180" height="119.8071" alt="work_last">
+                        </td>
+
+                        <td width="26.3%">
+                            <img src="work_2.png" width="180" height="119.8071" alt="work_last">
+                        </td>
+
+                        <td>
+                            <img src="work_3.png" width="180" height="119.8071" alt="work_last">
+                        </td>
+                    </tr>
+                    <tr><td height="0px"></td></tr>
+                </table>
+            </div>
+
+                <div class="work" style="margin-top:50px">
+                    <h2 style="margin-left:15px" id="expec">Ожидания</h2>
+                    <hr width="90%" style="padding-left:5%">
+                    <p>
+                        Что касается моих ожиданий от ШРИ, здесь в первую очередь хочется отметить
+                        неограниченные возможности для творчества и развития.
+                        Каждая новая работа по уровню исполнения будет выше предыдущей. Очень
+                        люблю работать в команде, т.к. совместная работа позволяет за более
+                        короткий срок увидеть результат труда.
+                    </p>
+                </div>
+
+                <div class="work" style="margin-top:50px">
+                    <h2 style="margin-left:15px" id="exp">Опыт</h2>
+                    <hr width="90%" style="padding-left:5%">
+
+                    <p>
+                        К сожалению богатого опыта нет, однако обладаю упорством и
+                        способностью полностью отдаваться делу. Уверен в моём скором
+                        профессиональном росте благодаря работе в коллективе компании Яндекс.
+
+                    </p>
+                    <p>
+                        <small><i><u><b>Примечание</b></u></i>: сайт тестировался на windows 7 (32bit) chrome,
+                            android 4.1 (1920x1024) chrome mobile, для полноценного отображения
+                            странички требуется соединение с интернетом.<small>
+                    </p>
+                    <p align="right"><small>Павел Воробьёв</small></p>
+                </div>
+
+                <p id="back-top">
+                    <a href="#"><span></span>Вверх</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
